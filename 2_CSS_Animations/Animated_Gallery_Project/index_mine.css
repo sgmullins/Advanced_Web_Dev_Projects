@@ -1,0 +1,79 @@
+h1{
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 400;
+    text-decoration: underline red;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  /* set everything inside the div of item */
+div.item * {
+    box-sizing: border-box;
+  }
+  .item img {
+    max-width: 100%;
+    vertical-align: top;
+    height: 100%;
+  }
+
+  div.item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:35px;
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms 0ms cubic-bezier(0.075, 0.82, 0.165, 1); 
+  }
+  
+  .item:hover i{
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms 100ms cubic-bezier(0.075, 0.82, 0.165, 1); 
+    }
+
+  .purple {
+      background: purple;
+  }
+  .purple i{
+    color: purple;
+}
+  .pink {
+      background: palevioletred;
+  }
+  .pink i{
+    color: palevioletred;
+}
+  .teal {
+      background: teal;
+  }
+
+.teal i{
+    color: teal;
+}
+
+.item:hover img{
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+.item *{
+    transition: all .5s ease-in-out;
+}
