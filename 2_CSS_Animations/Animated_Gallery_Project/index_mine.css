@@ -43,7 +43,7 @@ div.item * {
     transform: translate(-50%, -50%) scale(0);
     transition: transform 300ms 0ms cubic-bezier(0.075, 0.82, 0.165, 1); 
   }
-  
+
   .item:hover i{
     transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms 100ms cubic-bezier(0.075, 0.82, 0.165, 1); 

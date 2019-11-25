@@ -1,0 +1,82 @@
+html {
+    background: #ecf0f1;
+}
+
+body,
+h1,
+h2 {
+    font-family: Helvetica, Sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2.loads {
+    font-size: 36px;
+    opacity: 0;
+    animation: appear 1s 2s forwards;
+    margin-top: 10px;
+}
+
+.container {
+    margin: 4em;
+    text-align: center;
+}
+
+.loader {
+    margin: auto;
+    border: 16px solid grey;
+    width: 120px;
+    height: 120px;
+    border-top-color: #1abc9c;
+    border-bottom-color: #3498db;
+    border-radius: 50%;
+    animation: color-spin 4s linear infinite;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color-spin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        border-top-color: red;
+        border-bottom-color: red;
+    }
+
+    50% {
+        border-top-color: red;
+        border-bottom-color: red;
+        transform: rotate(360deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
