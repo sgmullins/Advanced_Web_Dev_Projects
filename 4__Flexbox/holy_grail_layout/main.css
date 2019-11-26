@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+article {
+    flex-basis: 60%;
+    background: red;
+    flex-grow: 3;
+}
+
+nav {
+    flex-basis: 20%;
+    background: orange;
+    order: -1;
+    flex-grow: 1;
+}
+
+aside {
+    flex-basis: 20%;
+    background: yellow;
+    flex-grow: 1;
+}
+
+header,
+footer {
+    background: blue;
+    min-height: 100px;
+}
+
+@media all and (max-width: 640px) {
+    main {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    nav {
+        order: 0;
+    }
+}
